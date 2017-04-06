@@ -1,4 +1,4 @@
-import media
+import media, fresh_tomatoes
 #good to keep class definition in one file, and use it in other files
 #similar to brad turtle example
 
@@ -17,4 +17,20 @@ nayagan = media.Movie("Nayagan",
                     "https://upload.wikimedia.org/wikipedia/en/7/7b/Nayagan_poster.jpg",
                     "https://www.youtube.com/watch?v=mMXtoxdJdXk")
 
-nayagan.show_trailer()
+baasha = media.Movie("Baasha",
+                    "Don who turns into autorickshaw driver",
+                    "https://upload.wikimedia.org/wikipedia/en/6/6e/Baasha_Poster.jpg",
+                    "https://www.youtube.com/watch?v=0lZ4Uf0ST9A")
+
+fightclub = media.Movie("Fight Club",
+                    "Personalities of Tyler Durden",
+                    "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+                    "https://www.youtube.com/watch?v=SUXWAEX2jlg")
+
+intothewild = media.Movie("Into The wild",
+                    "College graduate goes on an Alaskan wilderness trip",
+                    "https://upload.wikimedia.org/wikipedia/en/8/8a/Into-the-wild.jpg",
+                    "https://www.youtube.com/watch?v=lwtZgBFKlzs")
+
+movies = [toy_story, avatar, nayagan, baasha, fightclub, intothewild]
+fresh_tomatoes.open_movies_page(movies)
